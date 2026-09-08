@@ -9,4 +9,34 @@
     line-height: 1.6;
     flex-wrap: wrap;
   }
+
+  .education-logo {
+    width: 48px;
+    height: 48px;
+    max-width: 48px !important;
+    max-height: 48px !important;
+    object-fit: contain;
+  }
+
+  .stack-grid-expanded .stack-group {
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .stack-grid-expanded .technology-list {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .education-logo {
+    width: 46px;
+    height: 46px;
+    max-width: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .stack-grid-expanded .stack-group {
+    padding: 17px;
+  }
 }
