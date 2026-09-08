@@ -1,0 +1,12 @@
+@media (max-width: 820px) {
+  .experience-card.featured {
+    min-height: auto;
+  }
+
+  .experience-card.featured .experience-signal {
+    position: static;
+    margin-top: 26px;
+    line-height: 1.6;
+    flex-wrap: wrap;
+  }
+}
