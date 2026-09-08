@@ -3,14 +3,18 @@ import { certifications, stack } from "@/data/portfolio";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 
-const groupIcons = [Braces, Cloud, Database, TerminalSquare, TerminalSquare];
+const groupIcons = [Braces, Cloud, Database, TerminalSquare];
 
 export function Credentials() {
   return (
     <section id="credentials" className="section">
       <div className="section-inner">
         <Reveal>
-          <SectionHeading eyebrow="04 / Credentials" title="Tools are useful. Judgment matters more." />
+          <SectionHeading
+            eyebrow="04 / Credentials"
+            title="Tools are useful. Judgment matters more."
+            description="A production-focused toolkit spanning software engineering, cloud, data systems, and modern web development."
+          />
         </Reveal>
         <div className="credentials-layout">
           <Reveal>
@@ -21,14 +25,16 @@ export function Credentials() {
               <div className="cert-meta"><span>{certifications[0].issuer}</span><span>{certifications[0].year}</span></div>
             </div>
           </Reveal>
-          <div className="stack-grid">
+          <div className="stack-grid stack-grid-expanded">
             {Object.entries(stack).map(([group, technologies], index) => {
               const Icon = groupIcons[index] ?? Braces;
               return (
                 <Reveal key={group} delay={index * 0.04}>
                   <div className="stack-group">
                     <div className="stack-group-title"><Icon size={16} /><span>{group}</span></div>
-                    <p>{technologies.join(" · ")}</p>
+                    <div className="technology-list">
+                      {technologies.map((technology) => <span key={technology}>{technology}</span>)}
+                    </div>
                   </div>
                 </Reveal>
               );
