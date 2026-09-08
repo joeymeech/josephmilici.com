@@ -4,7 +4,7 @@ export const education = [
     shortName: "Holy Ghost Prep",
     years: "2015 — 2019",
     detail: "The starting point.",
-    logo: "/logos/holy-ghost-prep.jpg",
+    logo: "/logos/holy-ghost-prep.png",
     accent: "#f4d35e",
   },
   {
@@ -20,7 +20,7 @@ export const education = [
     shortName: "Penn Engineering",
     years: "2025 — Present",
     detail: "MSE in Artificial Intelligence",
-    logo: null,
+    logo: "https://branding.web-resources.upenn.edu/sites/default/files/styles/card_3x2/public/2022-03/UniversityofPennsylvania_Shield_RGB-2.png?h=3c287ac3&itok=HgG1DNc-",
     accent: "#4f80ff",
     current: true,
   },
@@ -68,9 +68,10 @@ export const certifications = [
 ] as const;
 
 export const stack = {
-  Languages: ["Python", "TypeScript", "JavaScript", "SQL"],
-  Cloud: ["AWS", "Vercel"],
-  Data: ["PostgreSQL", "Kafka", "Teradata"],
-  Web: ["Next.js", "React", "Tailwind CSS"],
-  Tools: ["Git", "Linux", "Control-M"],
+  Languages: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "C#", "C/C++", "Bash"],
+  "Cloud & AWS": ["AWS", "S3", "Lambda", "ECS", "Glue", "Athena", "DynamoDB", "API Gateway", "Vercel"],
+  "Data Systems": ["PostgreSQL", "Kafka", "Teradata", "Snowflake", "Hive"],
+  "Backend & Web": ["Next.js", "React", "FastAPI", "REST APIs", "Tailwind CSS"],
+  "Infrastructure & Delivery": ["Terraform", "Jenkins", "Control-M", "Linux"],
+  Tooling: ["Git", "Maven", "JUnit", "Grafana"],
 } as const;
