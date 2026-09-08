@@ -31,11 +31,15 @@ export function EducationTimeline() {
                   <span>{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <div className="education-logo-shell">
-                  {item.logo ? (
-                    <Image src={item.logo} alt={`${item.school} logo`} width={88} height={88} className="education-logo" />
-                  ) : (
-                    <div className="education-logo-fallback">PENN</div>
-                  )}
+                  <Image
+                    src={item.logo}
+                    alt={`${item.shortName} logo`}
+                    width={88}
+                    height={88}
+                    sizes="88px"
+                    unoptimized={item.logo.endsWith(".svg")}
+                    className="education-logo"
+                  />
                 </div>
                 <div className="education-copy">
                   <div className="education-meta">
