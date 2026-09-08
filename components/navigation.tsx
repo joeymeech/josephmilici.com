@@ -31,6 +31,7 @@ export function Navigation() {
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
             <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
           </div>
           <div className="nav-actions">
             <a className="icon-link" href="https://github.com/joeymeech" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -39,7 +40,7 @@ export function Navigation() {
             <a className="icon-link" href="https://www.linkedin.com/in/joseph-milici/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <LinkedInMark />
             </a>
-            <button className="command-trigger" onClick={() => setCommandOpen(true)}>
+            <button className="command-trigger" onClick={() => setCommandOpen(true)} aria-label="Open command palette">
               <Command size={15} />
               <span>⌘ K</span>
             </button>
