@@ -39,6 +39,7 @@ export function EducationTimeline() {
                     sizes="88px"
                     unoptimized={item.logo.endsWith(".svg")}
                     className="education-logo"
+                    style={item.shortName === "Penn Engineering" ? { maxWidth: 66, maxHeight: 66 } : undefined}
                   />
                 </div>
                 <div className="education-copy">
