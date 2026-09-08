@@ -4,7 +4,7 @@ export const education = [
     shortName: "Holy Ghost Prep",
     years: "2015 — 2019",
     detail: "The starting point.",
-    logo: "https://imstours.org/wp-content/uploads/2025/02/Holy-Ghost_T-1.jpg",
+    logo: "/logos/holy-ghost-prep.webp",
     accent: "#f4d35e",
   },
   {
