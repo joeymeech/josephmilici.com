@@ -1,3 +1,4 @@
+import { Contact } from "@/components/contact";
 import { Credentials } from "@/components/credentials";
 import { EducationTimeline } from "@/components/education-timeline";
 import { Experience } from "@/components/experience";
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience />
       <SelectedWork />
       <Credentials />
+      <Contact />
       <Footer />
     </main>
   );
