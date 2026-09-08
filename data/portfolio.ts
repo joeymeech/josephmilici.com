@@ -4,7 +4,7 @@ export const education = [
     shortName: "Holy Ghost Prep",
     years: "2015 — 2019",
     detail: "The starting point.",
-    logo: "/logos/holy-ghost-prep.png",
+    logo: "/logos/holy-ghost-prep.svg",
     accent: "#f4d35e",
   },
   {
