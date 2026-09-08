@@ -1,1 +1,0 @@
-Portfolio logo assets.
