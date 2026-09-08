@@ -4,7 +4,7 @@ export const education = [
     shortName: "Holy Ghost Prep",
     years: "2015 — 2019",
     detail: "The starting point.",
-    logo: "/logos/holy-ghost-prep.jpg",
+    logo: "https://s3.amazonaws.com/rg175-public/current_searches/17839543112020683257.png",
     accent: "#f4d35e",
   },
   {
@@ -20,7 +20,7 @@ export const education = [
     shortName: "Penn Engineering",
     years: "2025 — Present",
     detail: "MSE in Artificial Intelligence",
-    logo: null,
+    logo: "https://herbiewright.com/penn_logo.png",
     accent: "#4f80ff",
     current: true,
   },
@@ -68,9 +68,8 @@ export const certifications = [
 ] as const;
 
 export const stack = {
-  Languages: ["Python", "TypeScript", "JavaScript", "SQL"],
-  Cloud: ["AWS", "Vercel"],
-  Data: ["PostgreSQL", "Kafka", "Teradata"],
-  Web: ["Next.js", "React", "Tailwind CSS"],
-  Tools: ["Git", "Linux", "Control-M"],
+  Languages: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "C++", "C#", "Bash"],
+  "Cloud & Data": ["AWS", "PostgreSQL", "Kafka", "Teradata", "Snowflake", "Hive", "Vercel"],
+  "Web & Frameworks": ["Next.js", "React", "Tailwind CSS"],
+  "Engineering Tools": ["Git", "Linux", "Control-M", "REST APIs"],
 } as const;
