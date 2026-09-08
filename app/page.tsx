@@ -1,3 +1,4 @@
+import { ContactSection } from "@/components/contact-section";
 import { Credentials } from "@/components/credentials";
 import { EducationTimeline } from "@/components/education-timeline";
 import { Experience } from "@/components/experience";
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience />
       <SelectedWork />
       <Credentials />
+      <ContactSection />
       <Footer />
     </main>
   );
