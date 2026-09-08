@@ -4,12 +4,12 @@ import { GitHubMark, LinkedInMark } from "./social-marks";
 
 export function Footer() {
   return (
-    <footer id="contact" className="footer">
+    <footer className="footer">
       <div className="section-inner">
         <Reveal>
           <div className="footer-main">
-            <p className="eyebrow">05 / Connect</p>
-            <h2>Have something<br />interesting in mind?</h2>
+            <p className="eyebrow">Elsewhere</p>
+            <h2>Keep in touch.</h2>
             <div className="footer-links">
               <a href="https://www.linkedin.com/in/joseph-milici/" target="_blank" rel="noreferrer"><LinkedInMark /> LinkedIn <ArrowUpRight size={15} /></a>
               <a href="https://github.com/joeymeech" target="_blank" rel="noreferrer"><GitHubMark /> GitHub <ArrowUpRight size={15} /></a>

@@ -13,6 +13,20 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+## Contact form
+
+The contact form posts to `/api/contact` and sends through the Resend API. Configure these server-only environment variables locally and in Vercel:
+
+```bash
+RESEND_API_KEY=
+CONTACT_TO_EMAIL=
+CONTACT_FROM_EMAIL=
+```
+
+`CONTACT_FROM_EMAIL` should use a sender/domain verified in Resend (for example `Joseph Milici <website@josephmilici.com>` once the domain is ready).
+
+The endpoint validates input server-side and includes a honeypot field for simple bot filtering.
+
 ## Production
 
 ```bash
