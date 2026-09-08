@@ -1,5 +1,6 @@
-import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import { Reveal } from "./reveal";
+import { GitHubMark, LinkedInMark } from "./social-marks";
 
 export function Footer() {
   return (
@@ -10,8 +11,8 @@ export function Footer() {
             <p className="eyebrow">05 / Connect</p>
             <h2>Have something<br />interesting in mind?</h2>
             <div className="footer-links">
-              <a href="https://www.linkedin.com/in/joseph-milici/" target="_blank" rel="noreferrer"><Linkedin size={17} /> LinkedIn <ArrowUpRight size={15} /></a>
-              <a href="https://github.com/joeymeech" target="_blank" rel="noreferrer"><Github size={17} /> GitHub <ArrowUpRight size={15} /></a>
+              <a href="https://www.linkedin.com/in/joseph-milici/" target="_blank" rel="noreferrer"><LinkedInMark /> LinkedIn <ArrowUpRight size={15} /></a>
+              <a href="https://github.com/joeymeech" target="_blank" rel="noreferrer"><GitHubMark /> GitHub <ArrowUpRight size={15} /></a>
               <a href="mailto:joey.meech@gmail.com"><Mail size={17} /> Email <ArrowUpRight size={15} /></a>
             </div>
           </div>

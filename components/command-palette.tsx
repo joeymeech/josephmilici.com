@@ -4,21 +4,25 @@ import {
   ArrowUpRight,
   BriefcaseBusiness,
   FolderKanban,
-  Github,
   GraduationCap,
-  Linkedin,
   X,
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect } from "react";
+import { useEffect, type ComponentType } from "react";
+import { GitHubMark, LinkedInMark } from "./social-marks";
 
-const actions = [
+const actions: Array<{
+  label: string;
+  href: string;
+  icon: ComponentType<{ className?: string; size?: number }>;
+  external?: boolean;
+}> = [
   { label: "Education", href: "#education", icon: GraduationCap },
   { label: "Experience", href: "#experience", icon: BriefcaseBusiness },
   { label: "Selected work", href: "#work", icon: FolderKanban },
-  { label: "GitHub", href: "https://github.com/joeymeech", icon: Github, external: true },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/joseph-milici/", icon: Linkedin, external: true },
-] as const;
+  { label: "GitHub", href: "https://github.com/joeymeech", icon: GitHubMark, external: true },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/joseph-milici/", icon: LinkedInMark, external: true },
+];
 
 export function CommandPalette({
   open,
@@ -77,8 +81,8 @@ export function CommandPalette({
                   <a
                     key={action.label}
                     href={action.href}
-                    target={"external" in action && action.external ? "_blank" : undefined}
-                    rel={"external" in action && action.external ? "noreferrer" : undefined}
+                    target={action.external ? "_blank" : undefined}
+                    rel={action.external ? "noreferrer" : undefined}
                     onClick={() => onOpenChange(false)}
                   >
                     <span><Icon size={18} /> {action.label}</span>
