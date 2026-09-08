@@ -20,7 +20,7 @@ export const education = [
     shortName: "Penn Engineering",
     years: "2025 — Present",
     detail: "MSE in Artificial Intelligence",
-    logo: "https://herbiewright.com/penn_logo.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Shield_of_the_University_of_Pennsylvania.svg",
     accent: "#4f80ff",
     current: true,
   },
