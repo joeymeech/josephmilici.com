@@ -5,6 +5,7 @@ import {
   BriefcaseBusiness,
   FolderKanban,
   GraduationCap,
+  Mail,
   X,
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -20,6 +21,7 @@ const actions: Array<{
   { label: "Education", href: "#education", icon: GraduationCap },
   { label: "Experience", href: "#experience", icon: BriefcaseBusiness },
   { label: "Selected work", href: "#work", icon: FolderKanban },
+  { label: "Contact", href: "#contact", icon: Mail },
   { label: "GitHub", href: "https://github.com/joeymeech", icon: GitHubMark, external: true },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/joseph-milici/", icon: LinkedInMark, external: true },
 ];
