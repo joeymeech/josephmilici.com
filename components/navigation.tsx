@@ -1,8 +1,9 @@
 "use client";
 
-import { Command, Github, Linkedin } from "lucide-react";
+import { Command } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CommandPalette } from "./command-palette";
+import { GitHubMark, LinkedInMark } from "./social-marks";
 
 export function Navigation() {
   const [commandOpen, setCommandOpen] = useState(false);
@@ -33,10 +34,10 @@ export function Navigation() {
           </div>
           <div className="nav-actions">
             <a className="icon-link" href="https://github.com/joeymeech" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <Github size={17} />
+              <GitHubMark />
             </a>
             <a className="icon-link" href="https://www.linkedin.com/in/joseph-milici/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-              <Linkedin size={17} />
+              <LinkedInMark />
             </a>
             <button className="command-trigger" onClick={() => setCommandOpen(true)}>
               <Command size={15} />
